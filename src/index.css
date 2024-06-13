@@ -213,7 +213,7 @@
 }
 
 .main_logo{
-  width: 10rem;
+  width: 13rem;
 }
 
 
@@ -823,6 +823,27 @@ font-family: "Poppins";
   margin-top: 1rem;
 }
 
+.testimonial_top{
+  margin-top: 0.5rem;
+}
+
+.mobile_service_img img{
+  display: none;
+}
+
+.mobile_service_img{
+  display: none;
+}
+
+.desktop_service_img{
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.desktop_service_img img{
+  width: 900px;
+}
+
 /* Responsive */
 
 @media (max-width: 1399.98px) { 
@@ -882,6 +903,10 @@ font-family: "Poppins";
 @media (max-width: 991.98px) { 
   .sun_img{
     width: 130px;
+  }
+  .desktop_service_img img{
+    width: 90%;
+    margin-top: 1rem;
   }
   .s5Container{
     height: 70vh;
@@ -977,7 +1002,7 @@ font-family: "Poppins";
   }
 
   .main_logo{
-    width: 5rem;
+    width: 8rem;
   }
 
   .hero__title{
@@ -1066,6 +1091,24 @@ font-family: "Poppins";
   .sun_img{
     width: 50px;
   }
+  .desktop_service_img{
+    display: none;
+  }
+  .desktop_service_img img{
+    display: none;
+  }
+  .mobile_service_img img{
+    display: block !important;
+  }
+  
+  .mobile_service_img{
+    display: block;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .mobile_service_img img{
+    width: 90%;
+  }
   .navbar_nav{
     flex-direction: column;
   }
@@ -1074,6 +1117,10 @@ font-family: "Poppins";
   }
   .s5textContainer p{
     font-size: 1.5rem;
+  }
+
+  .main_logo{
+    width: 6rem;
   }
 
   .service_head_text{
@@ -1163,6 +1210,9 @@ font-family: "Poppins";
 
   .headerFont{
     margin-left: 0rem;
+    margin-top: 0rem;
+  }
+  .testimonial_top{
     margin-top: 0rem;
   }
 

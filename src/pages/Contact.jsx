@@ -8,6 +8,7 @@ import { preMessage, phoneNumber } from '../constant';
 import emailjs from '@emailjs/browser';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { SparklesText } from '../components/Backgrounds';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -103,10 +104,9 @@ const Contact = () => {
     <div className='contact'>
       <div id="contact_section1" className="contact_main">
       <div className="testimonials_heading w-full flex justify-center">
-            <GradualSpacing
-              className="font-display text-center text-4xl font-bold tracking-[-0.1em]  text-black dark:text-white md:text-7xl md:leading-[5rem]"
-              text="CONTACT US"
-            />
+          <div className="testimonial_top">
+            <SparklesText text="Contact Us" />
+          </div>
           </div>
         <div className="contact_form w-full flex justify-center items-center">
           <form ref={form} onSubmit={handleSubmit} className='form_main'>
@@ -151,10 +151,9 @@ const Contact = () => {
       
       <div id="contact_section2" className="contact_schedule">
           <div className="testimonials_heading w-full flex justify-center">
-            <GradualSpacing
-              className="font-display text-center text-4xl font-bold tracking-[-0.1em]  text-black dark:text-white md:text-7xl md:leading-[5rem]"
-              text="SCHEDULE"
-            />
+            <div className="testimonial_top">
+              <SparklesText text="Schedule" />
+            </div>
           </div>  
 
           <div className="contact_Schedule_table w-full flex justify-center items-center">
@@ -212,7 +211,7 @@ const Contact = () => {
 
       </div>
 
-      <div id="contact_section4" className="contact_map">
+      <div id="contact_section4 pt-10" className="contact_map">
         <section className="mt-16">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.1821116642873!2d80.67316283491253!3d16.51690129153459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35e4d58eddf989%3A0xc59ca086dfcafab8!2scurrency%20nagar%2C%20Vijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1717675753346!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
         </section>

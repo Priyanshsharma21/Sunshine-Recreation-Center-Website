@@ -76,16 +76,6 @@ export const words = [
 
 export const navItems = [
   {
-    key : "d2d2d87u6u",
-    name : "Social",
-    path : "/social-activities"
-  },
-  {
-    key : "d2d2d87u6u",
-    name : "Service",
-    path : "/service"
-  },
-  {
     key : "d2d2d232",
     name : "About",
     path : "/about"
@@ -94,6 +84,16 @@ export const navItems = [
     key : "d2d2d5656",
     name : "Contact",
     path : "/contact"
+  },
+  {
+    key : "d2d2d87u6u",
+    name : "Service",
+    path : "/service"
+  },
+  {
+    key : "d2d2d87u6u",
+    name : "Social",
+    path : "/social-activities"
   },
 ]
 

@@ -6,48 +6,21 @@ import { SparklesText } from '../components/Backgrounds'
 
 export default function ServiceIntroScroll() {
     const container = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ['start end', 'end start']
-    })
-    const sm = useTransform(scrollYProgress, [0, 1], [0, -50]);
-    const md = useTransform(scrollYProgress, [0, 1], [0, -150]);
-    const lg = useTransform(scrollYProgress, [0, 1], [0, -250]);
-
-    const images = [
-        {
-            src: "https://cdn.sanity.io/images/s9olv7lh/production/3f47ac4a43ee87c3488d22deaeb8d8fbc49734e4-899x1599.jpg",
-            y: 0
-        },
-        {
-            src: "https://cdn.sanity.io/images/s9olv7lh/production/d1819d29d44c09b0ef79ce36ecc30561068c5222-1280x904.png",
-            y: lg
-        },
-        {
-            src: "https://cdn.sanity.io/images/s9olv7lh/production/32be2247546ed26a00f12102616c3d9b7ee51053-736x663.png",
-            y: md
-        }
-    ];
-
+ 
     return (
         <div ref={container} className="service_intro_container overflow-hidden">
             <div className="service_intro_body">
-                <motion.h1 className="service_heading flex justify-center" style={{y: sm}}>
+                <motion.h1 className="service_heading flex justify-center" >
                     <SparklesText text="OUR SERVICE" />
                 </motion.h1>
             </div>
-            <div className="service_intro_images">
-                {
-                    images.map( ({src, y}, i) => {
-                        return <motion.div style={{y}} key={`i_${i}`} className="service_intro_imageContainer">
-                            <img 
-                                src={src}
-                                placeholder="blur"
-                                alt="image"
-                            />
-                        </motion.div>
-                    })
-                }
+            <div className="service_intro_images w-full flex justify-center">
+                <div className="desktop_service_img">
+                    <img src={"https://cdn.sanity.io/images/s9olv7lh/production/55869343f4cd1d649265bf06d7598850dfa5e9b7-2239x1391.png"} alt="desktop_service_img" />
+                </div>
+                <div className="mobile_service_img">
+                    <img src={"https://cdn.sanity.io/images/s9olv7lh/production/04844b88ca1357444a6baff12aee1a57d9cf1b60-782x2571.png"} alt="mobile_service_img" />
+                </div>
             </div>
         </div>
     )

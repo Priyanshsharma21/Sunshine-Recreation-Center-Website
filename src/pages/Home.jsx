@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { GradualSpacing, Hero, HomeEvents, HomeGallery, HomeService, Testimonials } from '../components'
 import { useScroll } from 'framer-motion';
+import { SparklesText } from '../components/Backgrounds';
 
 const Home = () => {
   const container = useRef();
@@ -14,13 +15,13 @@ const Home = () => {
         <Hero />
         <div className="show_ticker_home">
               <div className="group bg-[#67B547] flex h-full cursor-pointer items-center whitespace-nowrap">
-                <span className=" group-hover:pause animate-loopL text-[#165427] font-semibold uppercase">
+                <span className=" group-hover:pause animate-loopL text-[#F3F4F2] font-semibold uppercase">
                 Our Participants will be awarded certificates by Dr. Kiran Bedi ---&nbsp;
                 </span>
-                <span className="group-hover:pause animate-loopL text-[#165427] font-semibold uppercase">
+                <span className="group-hover:pause animate-loopL text-[#F3F4F2] font-semibold uppercase">
                 Our Participants will be awarded certificates by Dr. Kiran Bedi ---&nbsp;
                 </span>
-                <span className="group-hover:pause animate-loopL text-[#165427] font-semibold uppercase">
+                <span className="group-hover:pause animate-loopL text-[#F3F4F2] font-semibold uppercase">
                 Our Participants will be awarded certificates by Dr. Kiran Bedi ---&nbsp;
                 </span>
               </div>
@@ -32,10 +33,10 @@ const Home = () => {
         </main>
         <main className="w-full h-screen commonbg">
           <div className="testimonials_heading absolute w-full flex justify-center mt-10">
-            <GradualSpacing
-              className="font-display text-center text-4xl font-bold tracking-[-0.1em]  text-black dark:text-white md:text-7xl md:leading-[5rem]"
-              text="Testimonials"
-            />
+          <div className="testimonial_top">
+            <SparklesText text="Testimonials" />
+          </div>
+
           </div>
           <Testimonials />
         </main>
