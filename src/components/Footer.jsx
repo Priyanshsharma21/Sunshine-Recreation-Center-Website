@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="s22_footer h-full flex justify-center items-center">
                   <ul className="flex space-x-4">
                     {footer_social_media.map((item) => (
-                      <li key={item.name}>
+                      <li key={item.name} title={item.name}>
                         <a href={item.url} target="_blank" className="text-blue-400">
                           <item.icon className='text-white footer_logo'/>
                         </a>

@@ -60,7 +60,7 @@ const Contact = () => {
     console.log(form.current)
     e.preventDefault();
     emailjs
-      .sendForm('service_oig59jb', 'template_zaewpsh', form.current, {
+      .sendForm('service_oig59jb', 'template_n3107lt', form.current, {
         publicKey: 'LbbIL_gQxHYevjzCJ',
       })
       .then(

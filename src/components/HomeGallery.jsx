@@ -1,22 +1,14 @@
 import React, { useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
-import { useAnimeContext } from '../context/animeContext';
 import { flowersBorder, w1,
-  w2,
-  w3,
-  w4,
-  w5,
-  w6,
-  w7,    flowersBorderLeft,
-  flowersBorderRight,
-  flowersBorderDown} from '../assets/index'
+  flowersBorderLeft,
+  flowersBorderRight } from '../assets/index'
   import { useScroll, useTransform, motion} from 'framer-motion';
 
 gsap.registerPlugin(ScrollTrigger)
 
 const HomeGallery = () => {
-  const aboutRef = useRef(null)
   const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -24,42 +16,12 @@ const HomeGallery = () => {
     })
 
     const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
-    const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
-    const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
-    const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
-    const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
-
-  const {setCurrentNav} = useAnimeContext()
 
   const pictures = [
     {
-        src: w1,
+        src: "https://www.youtube.com/embed/Pd8igzf8Njs?si=MVBKYvyh577Qnred",
         scale: scale4
     },
-    // {
-    //     src: w3,
-    //     scale: scale5
-    // },
-    // {
-    //     src: w2,
-    //     scale: scale6
-    // },
-    // {
-    //     src: w4,
-    //     scale: scale5
-    // },
-    // {
-    //     src: w5,
-    //     scale: scale6
-    // },
-    // {
-    //     src: w6,
-    //     scale: scale8
-    // },
-    // {
-    //     src: w7,
-    //     scale: scale9
-    // }
 ]
 
   return (
@@ -73,11 +35,7 @@ const HomeGallery = () => {
                       pictures.map( ({src, scale}, index) => {
                           return <motion.div key={index} style={{scale}} className="about_el">
                               <div className="about_imageContainer">
-                                  <img
-                                      src={src}
-                                      alt="image"
-                                      className='z-50'
-                                  />
+                                <iframe className="youtube_video" width="100%" height="100%" src={src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
                               </div>
                           </motion.div>
                       })

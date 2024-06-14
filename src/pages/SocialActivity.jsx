@@ -14,6 +14,8 @@ const SocialActivity = () => {
               <SparklesText text="SOCIAL ACTIVITIES" />
           </motion.h1>
         </section>
+     <ServiceMoto/>
+
 
         <div className="service_cards_main2">
         <Row gutter={[24,24]} className='flex justify-center'>
@@ -38,6 +40,8 @@ const SocialActivity = () => {
           ))}
         </Row>
       </div>
+
+
     </div>
   )
 }

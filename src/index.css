@@ -177,20 +177,21 @@
   color:#FFF403 ;
 }
 
-.dynamic_hero_index{
+.dynamic_hero_index {
   transition: all 0.3s linear;
-  text-shadow:     0 1px 0 hsl(0, 0%, 20%),
-  0 2px 0 hsl(0, 0%, 15%),
-  0 3px 0 hsl(0, 0%, 10%),
-  0 4px 0 hsl(0, 0%, 8%),
-  0 5px 0 hsl(0, 0%, 6%),
-  0 6px 0 hsl(0, 0%, 5%),
-  0 0 5px rgba(0, 0, 0, .05),
-  0 1px 3px rgba(0, 0, 0, .2),
-  0 3px 5px rgba(0, 0, 0, .2),
-  0 5px 10px rgba(0, 0, 0, .2),
-  0 10px 10px rgba(0, 0, 0, .2),
-  0 20px 20px rgba(0, 0, 0, .3);
+  text-shadow: 
+    0 1px 0 hsla(54, 100%, 55%, 0.726),  /* Slightly darker yellow */
+    0 5px 0 hsl(54, 100%, 35%),
+    0 6px 0 hsl(54, 100%, 30%),
+    0 7px 0 hsl(54, 100%, 25%),
+    0 8px 0 hsl(54, 100%, 20%),
+
+    0 0 5px rgba(0, 0, 0, 0.1), /* Subtle black shadows for depth */
+    0 1px 3px rgba(0, 0, 0, 0.15),
+    0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.3),
+    0 20px 20px rgba(0, 0, 0, 0.35);
 }
 
 .showNavGrad{
@@ -325,6 +326,12 @@
 }
 
 
+.homeServices{
+  background-image: url("https://cdn.sanity.io/images/s9olv7lh/production/ed03e2df594d0ad5d8e4a5e9562ea4d1a536d577-2560x1440.jpg");
+  object-fit: cover;
+  background-size: center center;
+}
+
 .home_service_cards{
   margin-top: 3rem;
 }
@@ -437,9 +444,13 @@
   background-position: center center;
 }
 
+.youtube_video{
+  box-shadow: 0px 0px 100px 60px #C8CC43;
+}
+
 /* about_main */
 .about_main{
-  background: url("https://cdn.sanity.io/images/s9olv7lh/production/518fe3f7082441d9da7a2fa2309546c1fa1a1e2c-1440x1277.png");
+  background: url("https://cdn.sanity.io/images/s9olv7lh/production/7b6b9581c21b1d66ea8592af463adc12790c76a5-1440x1277.png");
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
@@ -695,13 +706,6 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  background: linear-gradient(
-    to bottom,
-    #87CEEB,
-    #ADD8E6, 
-    #FFD700,  
-    #FFA500   
-  );
 }
 
 
@@ -727,8 +731,20 @@
   font-weight: 700;
   margin: 0px;
   transition: all 0.4s;
-  color: white;
+  color: rgb(255, 251, 0);
   line-height: 8vw;
+  text-shadow: 0 1px 0 hsla(54, 100%, 55%, 0.726),  /* Slightly darker yellow */
+  0 5px 0 hsl(54, 100%, 35%),
+  0 6px 0 hsl(54, 100%, 30%),
+  0 7px 0 hsl(54, 100%, 25%),
+  0 8px 0 hsl(54, 100%, 20%),
+
+  0 0 5px rgba(0, 0, 0, 0.1), /* Subtle black shadows for depth */
+  0 1px 3px rgba(0, 0, 0, 0.15),
+  0 3px 5px rgba(0, 0, 0, 0.2),
+  0 5px 10px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.3),
+  0 20px 20px rgba(0, 0, 0, 0.35);;
 }
 
 .s5textContainer .s5secondary{
@@ -738,6 +754,18 @@
   top: 0;
   color: #000;
   opacity: 0;
+  text-shadow: 1px 1px 0px #ccc,   /* Light shadow for a highlight effect */
+  2px 2px 0px #ccc,
+  3px 3px 0px #bbb,   /* Slightly darker shadow */
+  4px 4px 0px #bbb,
+  5px 5px 0px #aaa,   /* Gradually darker shadow */
+  6px 6px 0px #aaa,
+  7px 7px 0px #999,   /* Darker shadow for depth */
+  8px 8px 8px rgba(0, 0, 0, 0.6), /* Final darker shadow with blur for polished look */
+
+  /* Additional subtle highlights for a polished effect */
+  -1px -1px 0px #fff, /* Top-left highlight */
+  -2px -2px 0px #fff;
 }
 
 .s5textContainer:hover{
@@ -1113,7 +1141,7 @@ font-family: "Poppins";
     flex-direction: column;
   }
   .s5Container{
-    height: 45vh;
+    height: 40vh;
   }
   .s5textContainer p{
     font-size: 1.5rem;
@@ -1205,7 +1233,7 @@ font-family: "Poppins";
     font-size: 2rem;
   }
   .s5Container{
-    height: 35vh;
+    height: 25vh;
   }
 
   .headerFont{

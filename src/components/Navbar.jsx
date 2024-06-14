@@ -34,7 +34,7 @@ const Navbar = () => {
 
       <div className="headerFont z-50" data-menu-item data-hidden>
         <Link to="/">
-          <img src={"https://cdn.sanity.io/images/s9olv7lh/production/0c46b3858ae996d961114315e78c29eef10aed24-961x348.png"} alt="Sunshine Recreation Centre Logo" className="main_logo h-auto" />
+          <img src={"https://cdn.sanity.io/images/s9olv7lh/production/7e0f7ed86ff98373113aaad36b8e8c7393b0add4-961x348.png"} alt="Sunshine Recreation Centre Logo" className="main_logo h-auto" />
         </Link>
       </div>
 

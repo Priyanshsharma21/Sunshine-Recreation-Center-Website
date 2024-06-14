@@ -1,6 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
+import { CiYoutube } from "react-icons/ci";
 import {service1,
   service2,
   service3 ,
@@ -176,6 +177,11 @@ export const reviews = [
 ]
 
 export const footer_social_media = [
+  {
+    name: "Youtube",
+    url: "http://youtube.com",
+    icon: CiYoutube,
+  },
   {
     name: "Instagram",
     url: "http://instagram.com",

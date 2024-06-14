@@ -32,7 +32,7 @@ const HomeService = ({ scrollYProgress }) => {
     <motion.div style={{ scale, rotate }} className="sticky top-0 h-[100vh] homeServices">
       <img
         id="river_fog"
-        src="https://cdn.sanity.io/images/s9olv7lh/production/36cdd40326e87b2f12a51effe905a4d7d685d99c-15722x4033.png"
+        src="https://cdn.sanity.io/images/s9olv7lh/production/bd74a64bcafb189ff3760ab8edae89829447d369-15722x4033.png"
         alt="flower_border"
         className="w-full relative z-20 our_Service_fog"
       />

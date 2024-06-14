@@ -39,11 +39,10 @@ const Service = () => {
         </Row>
       </div>
       
-     <ServiceMoto/>
      
-      <section ref={container} className="section_2_service">
+      {/* <section ref={container} className="section_2_service">
           <SocialActivities />
-      </section>
+      </section> */}
      
     </div>
   );
