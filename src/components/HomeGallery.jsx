@@ -19,7 +19,7 @@ const HomeGallery = () => {
 
   const pictures = [
     {
-        src: "https://www.youtube.com/embed/Pd8igzf8Njs?si=MVBKYvyh577Qnred",
+        src: "https://www.youtube.com/embed/su0oz9Vceo0?si=D2rsIpD9dLmmu-xy",
         scale: scale4
     },
 ]

@@ -179,17 +179,17 @@ export const reviews = [
 export const footer_social_media = [
   {
     name: "Youtube",
-    url: "http://youtube.com",
+    url: "https://www.youtube.com/@sunshinerecreation-ht9wv",
     icon: CiYoutube,
   },
   {
     name: "Instagram",
-    url: "http://instagram.com",
+    url: "https://www.instagram.com/sunshinerecreation1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     icon: FaInstagram,
   },
   {
     name: "Facebook",
-    url: "http://facebook.com",
+    url: "https://www.facebook.com/profile.php?id=61561313212379",
     icon: CiFacebook,
   },
   {

@@ -57,7 +57,6 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    console.log(form.current)
     e.preventDefault();
     emailjs
       .sendForm('service_oig59jb', 'template_n3107lt', form.current, {
