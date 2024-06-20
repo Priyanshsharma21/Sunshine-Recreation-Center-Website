@@ -31,11 +31,7 @@ const App = () => {
           <>
             <Navbar />
             <Routes>
-              <Route index path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/service" element={<Service />} />
-              <Route path="/social-activities" element={<SocialActivity />} />
+              
             </Routes>
             <Footer />
           </>
